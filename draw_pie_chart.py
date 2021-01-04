@@ -38,7 +38,8 @@ print(make_pie_chart())
 
 pie.up()
 pie.goto(300, 300)
-pie.write(unique_elements, True, align="center")
+pie.write(for element in unique_elements:
+    print(f"{element} -- {unique_list_count} times"))
 
 pie.hideturtle()
 
