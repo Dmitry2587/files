@@ -34,12 +34,13 @@ def make_pie_chart():
 
 print(make_pie_chart())
 
-# This will make a legend to a graph
+# This will make a legend to a graph without colors
 
 pie.up()
 pie.goto(300, 300)
-pie.write(for element in unique_elements:
-    print(f"{element} -- {unique_list_count} times"))
+pie.write(unique_elements, move=False, align='left')
+pie.goto(290, 290)
+pie.write(unique_list_count, move=False, align='left')
 
 pie.hideturtle()
 
